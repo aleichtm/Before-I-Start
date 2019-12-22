@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" 
+          href="https://fonts.googleapis.com/css?family=Marko%20One" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="general.css" />
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ari Leichtman" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      fieldset fieldset {
+        width: 9em;
+        text-align: right;
+      }
+    </style>
+    <title>Before I Start - Register</title>
+  </head>
+  <body>
+    <header>
+      <h1>Before I Start</h1>
+      <nav>
+        <a href="index.html" style="color:blue">Books</a>
+        <a href="movies.html" style="position:absolute;left:29%;color:maroon;">Movies</a>
+        <a href="tv.html" style="position:absolute;right:29%;color:turquoise;">Television</a>
+        <a href="games.html" style="position:absolute;right:0px;color:violet;">Video Games</a>
+      </nav>
+    </header>
+    <div id="background">
+      <main>
+        <section>
+          <h2 style="margin-top:0;text-align:center;padding:0.1em;">
+            Become an approved submitter
+          </h2>
+          <form name="create" action="http://ftp.sunyrockland.edu/~laaron/form-processor.php"
+          method="post">
+            <fieldset>
+              <legend>Create an account:</legend>
+              <label for="email">Email: </label>
+              <input type="email" id="email" name="email" />
+              <label for="password">Password: </label>
+              <input type="password" id="password" name="password" />
+            </fieldset>
+            <fieldset>
+              <legend>About You</legend>
+              <fieldset>
+                <legend>Age</legend>
+                <label for="12">&#60;13</label>
+                <input type="radio" name="age" id="12" value="12" /> <br />
+                <label for="17">13-17</label>
+                <input type="radio" name="age" id="17" value="17" /> <br />
+                <label for="18">18-35</label>
+                <input type="radio" name="age" id="18" value="18" /><br />
+                <label for="40">36-55</label>
+                <input type="radio" name="age" id="40" value="40" /><br />
+                <label for="60">56+</label>
+                <input type="radio" name="age" id="60" value="60" /><br />
+              </fieldset>
+              <fieldset>
+                <legend>Interests</legend>
+                <label for="books">Books</label>
+                <input type="checkbox" name="books" id="books" value="yes" /><br />
+                <label for="movies">Movies</label>
+                <input type="checkbox" name="movies" id="movies" value="yes" /><br />
+                <label for="games">Video Games</label>
+                <input type="checkbox" name="games" id="games" value="yes" /><br />
+                <label for="tv">Television</label>
+                <input type="checkbox" name="tv" id="tv" value="yes" /><br />
+              </fieldset>
+              <fieldset>
+                <legend>Time Zone</legend>
+                <select name="zone" id="zone">
+                  <option>Pacific Time Zone</option>
+                  <option>Mountain Time Zone</option>
+                  <option>Central Time Zone</option>
+                  <option>Eastern Time Zone</option>
+                </select>
+              </fieldset>
+            </fieldset>
+            <fieldset style="margin-bottom: 5px">
+              <legend>Bio</legend>
+              <p style="margin: 3px">Tell us a bit about yourself:</p>
+              <textarea name="bio" id="bio" rows="15" cols="75"></textarea>
+            </fieldset>
+            <input type="submit" style="margin-left: 2px" />
+            <input type="reset" />
+          </form>
+        </section>
+      </main>
+    </div>
+    <footer><a href="register.html">Become an Approved Submitter!</a></footer>
+  </body>
+</html>
